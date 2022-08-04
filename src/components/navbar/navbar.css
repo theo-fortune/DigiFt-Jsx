@@ -31,7 +31,7 @@
 }
 
 .navbar-links_container a {
-  color: #8a91a8;
+  color: var(--light-gray);
 
   font-weight: 400;
   font-size: 14px;
@@ -42,7 +42,7 @@
 }
 
 .searchbox input {
-  color: #8a91a8;
+  color: var(--light-gray);
   border: none;
   border-radius: 0 4px 4px 0;
   background: #f3f4f7;
@@ -82,7 +82,7 @@
 }
 
 .label .ball {
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -110,8 +110,8 @@
 }
 
 .navbar-links__sign_button {
-  background: #0078ff;
-  color: #fff;
+  background: var(--color-blue);
+  color: var(--color-white);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -159,7 +159,7 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.02em;
-    color: #8a91a8;
+    color: var(--light-gray);
     padding-right: 4rem;
   }
 
@@ -174,6 +174,7 @@
     justify-content: center;
     align-content: center;
     margin: auto 1rem;
+    margin-right: 0;
     cursor: pointer;
   }
 
@@ -222,7 +223,7 @@
   }
 
   .dropDownMenu_searchbox input {
-    color: #8a91a8;
+    color: var(--light-gray);
     border: none;
     border-radius: 0 4px 4px 0;
     background: #f3f4f7;
@@ -244,6 +245,10 @@
 }
 
 @media screen and (max-width: 688px) {
+  .navbar {
+    padding: 2rem;
+  }
+  
   .navbar-links__sign {
     display: none;
   }
@@ -266,8 +271,8 @@
   }
 
   .dropDownMenu-navbar-links__sign_button {
-    background: #0078ff;
-    color: #fff;
+    background: var(--color-blue);
+    color: var(--color-white);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -290,5 +295,11 @@
 
   .dropDownMenu-navbar-links__sign_button img {
     margin: auto 1rem auto 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .navbar {
+    padding: 2rem 1rem;
   }
 }

@@ -10,8 +10,14 @@ import {
 } from "../index";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 // import { Pivot as Hamburger } from "hamburger-react";
+// import Toggle from "./Toggle";
+
 
 const Navbar = () => {
+  // const chk = document.getElementById("chk");
+  // chk.addEventListener("change", () => {
+  //   document.body.classList.toggle("dark");
+  // });
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="navbar navbar-links">
@@ -38,14 +44,7 @@ const Navbar = () => {
             placeholder="Find cards anywhere"
           />
         </div>
-        <div className="theme-switch-wrapper">
-          <input type="checkbox" className="checkbox" id="chk" />
-          <label className="label" for="chk">
-            <img src={sunSolid} alt="sun-solid" />
-            <img src={moonSolid} alt="moon-solid" />
-            <div className="ball"></div>
-          </label>
-        </div>
+        {/* <Toggle /> */}
         <div className="navbar-links__sign">
           <p className="navbar-links__sign-p">
             <a href="#log">Login</a>
