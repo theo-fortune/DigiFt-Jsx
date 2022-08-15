@@ -1,0 +1,41 @@
+.third__container {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mid-images {
+  width: 40%;
+}
+
+.section-padding {
+  padding: 3rem 2.5rem;
+}
+
+@media screen and (max-width:776px) {
+  .third__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .mid-images {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:688px) {
+  .section-padding {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section-padding {
+    padding: 1rem 0;
+  }
+}
